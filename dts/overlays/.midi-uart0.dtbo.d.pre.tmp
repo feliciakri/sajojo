@@ -1,0 +1,2 @@
+midi-uart0-overlay.o: arch/arm/boot/dts/overlays/midi-uart0-overlay.dts \
+ arch/arm/boot/dts/include/dt-bindings/clock/bcm2835.h
