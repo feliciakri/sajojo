@@ -1,0 +1,5 @@
+rpi-cirrus-wm5102-overlay.o: \
+ arch/arm/boot/dts/overlays/rpi-cirrus-wm5102-overlay.dts \
+ arch/arm/boot/dts/include/dt-bindings/pinctrl/bcm2835.h \
+ arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/include/dt-bindings/mfd/arizona.h

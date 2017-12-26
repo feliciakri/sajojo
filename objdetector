@@ -1,0 +1,4 @@
+#! /bin/sh
+# /etc/init.d/objdetector
+
+sudo python /home/pi/objdetector.py
