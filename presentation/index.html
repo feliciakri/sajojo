@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+ 
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1><strong>Sajojo</strong></h1>
+            <p class="text-intro">Nobita's Cannibal Gelato holds a Lightning Gun<br>
+              Sustainable Automated Railway Gate Control powered by Solar Energy
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h2><strong>Nobita's Cannibal Gelato holds a Lightning Gun</strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons size-50 ">
+                <li>
+                  <h2>Novianti Aliasih - 1506689111</h2>
+                </li>
+                <li>
+                  <h2>Valentina Kania - 1506757264</h2>
+                </li>
+                <li>
+                  <h2>Fellita Candini - 1506757900</h2>
+                </li>
+                <li>
+                  <h2>Felicia - 1506726183</h2>
+                </li>
+                <li>
+                  <h2>Gunawan Santoso - 1506757926.</h2>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1><strong>Introduction</strong></h1>
+            <p class="text-intro">Sajojo adalah sebuah sistem palang kereta otomatis bertenaga sinar matahari yang sustainable. Dengan menggunakan sensor infra-merah, Sajojo akan mendeteksi adanya kereta api yang akan melintas lalu akan menggerakan motor untuk menutup dan membuka palang kereta.
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gradient-white">
+          <span class="background-right" style="background-image:url('/static/images/arsitektur-sajojo.png')"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">General Architecture</p>
+              <h2>General architecture of Sajojo
+              </h2>
+              <p>Sajojo adalah sebuah sistem palang kereta otomatis bertenaga sinar matahari yang sustainable. Dengan menggunakan sensor infra-merah, Sajojo akan mendeteksi adanya kereta api yang akan melintas lalu akan menggerakan motor untuk menutup dan membuka palang kereta. </p>
+              
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gradient-white">
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">Custom Kernel</p>
+              <h2>Details on Sajojo's Custom Kernel
+              </h2>
+              <p>Untuk booting yang lebih cepat, konfigurasi kernel pada Raspberry Pi dimodifikasi sehingga modul - modul yang tidak diperlukan tidak perlu di-load oleh sistem. Berikut adalah modul yang dimodifikasi dari konfigurasi kernel:
+</p>
+            </div>
+            <div class="content-right">
+<p>-Hardware driver selain USB, GPIO, mouse, keyboard receiver dihapus<br>
+-Mematikan support Raspberry Pi untuk touchscreen dan sound<br>
+-Kompresi modul kernel yang tidak digunakan<br>
+-Mematikan verbose debugging oleh module<br>
+-Support bahasa selain bahasa Inggris dihapus<br>
+</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gradient-white">
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">Bootscript</p>
+              <h2>Details on Sajojo's Bootscript
+              </h2>
+              <p>-Membuat sebuah script yang berisikan perintah untuk run program utama<br>
+-Script disimpan di dalam direktori init.d, semua script yang tersimpan pada direktori tersebut akan dijalankan ketika proses boot.
+</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gradient-white">
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">GPIO Service Development</p>
+              
+              <p>GPIO digunakan dalam berkomunikasi dengan stepper motor, LED serta sensor</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gradient-white">
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">Lesson Learned</p>
+              <h2>Pembelajaran
+              </h2>
+              <p>-Pengetahuan mengenai sistem Raspberry Pi secara umum, termasuk arsitektur, sistem operasi, GPIO, dan modifikasinya
+<br>-Implementasi modul sensor ultrasonik, LED lamp, dan stepper motor pada Raspberry Pi, baik implementasi perangkat keras maupun lunak
+<br>-Implementasi Access Point dan SSH pada Raspberry Pi
+<br>-Modifikasi dan kompilasi kernel Raspbian OS pada Raspberry Pi
+<br>-Modifikasi dan pengaturan bootscript pada Linux dan Raspberry Pi
+
+</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-bottom">
+          <div class="wrap">
+            <div class="content-right text-serif">
+              <h2>
+                <strong>Thanks.</strong>
+              </h2>
+            </div>
+            <!-- .end .content-right -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
