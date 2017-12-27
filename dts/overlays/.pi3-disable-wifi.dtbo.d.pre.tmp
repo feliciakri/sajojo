@@ -1,2 +1,0 @@
-pi3-disable-wifi-overlay.o: \
- arch/arm/boot/dts/overlays/pi3-disable-wifi-overlay.dts
